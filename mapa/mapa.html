@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_mapa.css">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="overlay" class="overlay"></div>
+    <div class="conteudo">
+            <button id="voltar" onclick="window.location.href='../inicio/pg_inicial.html';">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <h1>Mapa</h1>
+    </div>
+
+    <div class="menu">
+        <button id="botão_menu">
+            <p>Ativar Chip</p>
+        </button>
+    </div>
+    <div id="menu_chips">
+        <div id="menu_chips-conteudo">
+            <button id="fechar" class="fecharPopup">
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+            </button>
+            <h2>Que chip você deseja ativar?</h2>
+            <div id="botao_chip"></div>
+        </div>
+    </div>
+    <script src="js_mapa.js"></script>
+</body>
+</html>

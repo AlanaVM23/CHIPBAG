@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_pg_inicial.css">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+    <title>ChipBag</title>
+
+</head>
+<body>
+    <div class="centro">
+        <picture>
+            <source media="(max-width: 500px)" srcset="../img/logo150_branca.png" type="image/png">
+            <img src="../img/logo200_branca.png" alt="">
+        </picture>
+        <div class="anuncio">
+            <h1 id="title_1">Proteja sua mala</h1>
+            <p id="text_1"> Cumque adipisci, excepturi labore, accusantium reiciendis dolore dicta officia assumenda sunt sed expedita quos rerum facere dolores illo?</p>
+        </div>
+        <br>
+        <br>
+        <div>
+            <a href="../aluguel/alugar_chip.html">    
+                <button class="botao_centro" >Alugar Chip</button>
+            </a>
+            <br>
+            <a href="../desbloquear_chip/desbloqueio.html">
+                <button class="botao_centro">Desbloquear Chip</button>
+            </a>
+            <br>
+            <br>
+            <div class="ativado" id="ativado_div">
+                <h1 id="text_ativado" style="display: none;">CHIPS ATIVADOS</h1>
+                <h1 id="title_2">Nenhum chip ativado no momento</h1>
+                <p id="text_2">Ative seu chip para aparecer suas informações</p>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <button class="botao_menu" id="menu_casa" onclick="location.href='pg_inicial.html'">
+            <span><i class="fa-solid fa-house"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_mapa" onclick="location.href='../mapa/mapa.html'">
+            <span><i class="fa-solid fa-map"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_mala" onclick="location.href='../gerenciar/gerenciar.html'">
+            <span><i class="fa-solid fa-suitcase-rolling"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_perfil" onclick="location.href='../perfil/perfil.html'">
+            <span><i class="fa-solid fa-user"></i></span>
+        </button>
+    </div>
+
+<script src="js_pg_inicial.js"></script>
+</body>
+</html>

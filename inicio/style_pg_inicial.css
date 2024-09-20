@@ -1,0 +1,135 @@
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro{
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    max-width: 700px; 
+    padding: 20px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.centro .anuncio{
+    background-color: #393939;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.centro .anuncio #title_1{
+    font-size: 18px;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color:#14bcdc;
+    margin: 15px;
+}
+
+.centro .anuncio #text_1{
+    font-size: 13px;
+    text-align: justify;
+    text-indent: 25px;
+    font-weight:lighter;
+    margin: 15px;
+    padding-bottom: 8px;
+}
+
+.centro .botao_centro{
+    background-color: #14bcdc;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    text-decoration: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 48;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+.centro .botao_centro:hover{
+    background-color: #127d92;
+}
+
+.centro .ativado{
+    background-color: #393939;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+.centro .ativado #title_2{
+    font-size: 18px;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color:#14bcdc;
+}
+
+.centro .ativado #text_2{
+    font-size: 13px;
+    text-align: center;
+    font-weight:lighter;
+}
+
+#text_ativado{
+    font-size: 21px;
+    font-weight:normal;
+    font-family: 'Gill Sans', sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+
+.mensagemAtivado{
+    vertical-align: middle;
+    margin: 10px 35px;
+    padding: 10px 0px;
+    background-color: #14bcdc;
+    border-radius: 10px;
+    width: 90%;
+    height: 20px;
+    font-size: 17px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    max-width: 700px; 
+    padding: 20px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.menu .botao_menu{
+    background: transparent;
+    color: white;
+    border: 0;
+    font-size: 25px;
+}
+
+.menu .active{
+    color: #14bcdc;
+}
+
+.menu .botao_menu :hover .fa-solid{
+    color: #14bcdc; 
+}

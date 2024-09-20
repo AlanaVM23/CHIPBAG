@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_desbloqueio.css">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Desbloqueio</title>
+
+</head>
+<body>
+<div class="conteudo">
+    <div class="blue">
+        <div class="conteudo_topo">
+            <h1>Desbloquear Chip</h1>
+            <p>Consulte o código de desbloqueio do seu chip</p>
+        </div>
+    </div>
+
+    <div class="grey">
+        <div class="conteudo_grey">
+                <div class="conteudo_meio">
+                    <label for="codigo">Código do Chip</label>
+                    <div class="campo">
+                        <input type="text" id="codigo" placeholder="Insira o código de desbloqueio do chip" maxlength="8">
+                    </div>
+                    <label for="nome_chip">Nome do Chip</label>
+                    <div class="campo">
+                        <input type="text" id="nome_chip" placeholder="Insira o nome do seu chip" maxlength="25">
+                    </div>
+                </div>
+                <div class="conteudo_final">
+                        <button onclick="voltar()">Voltar</button>
+                        <button onclick="verificarCodigo()">Próximo</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script src="js_desbloqueio.js"></script>
+
+</body>
+</html>

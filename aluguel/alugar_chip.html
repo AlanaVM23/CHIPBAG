@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_aluguel.css">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+    <title>Alugar Chip</title>
+</head>
+<body>
+<div id="overlay" class="overlay hidden"></div>
+<div class="centro">
+    <h1>Alugue seu Chip</h1>
+    <br>
+    <div class="conteudo_topo">
+        <label id="quantidade">Quantos chips deseja alugar?</label>
+        <select name="" id="selecione" onclick = "valorAPagar()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <label id="total_pagar" class="pagar0">Total a pagar:</label>
+    <br>
+    <br>
+    <div>
+        <label for="">Metodo de Pagamento</label>
+        <br>
+        <div class="pagar">
+            <ul id="lista">
+                <li class="conteudo_cartao">
+                    <div class="cartao_esquerda">
+                        <span><i class="fa-brands fa-pix"></i></span>
+                        <label class="text_cartao" for="pix"> Pix </label> 
+                    </div>
+                    <input class="check" type="radio" id="pix" name="metodoPagamento" onchange="camposPix()"> 
+                </li>
+                <li class="conteudo_cartao">
+                    <div class="cartao_esquerda">
+                        <span><i class="fa-regular fa-credit-card"></i></span>
+                        <label class="text_cartao" for="cartao">Cartão de Crédito/Debito</label>
+                    </div>
+                    <input class="check" type="radio" id="cartao" name="metodoPagamento" onchange="camposCartao()">
+                    <br>
+                </li>
+                    <div id="campos_checkbox" class="abrir_cartao-campos hidden">
+                        <label for="num_cartao">Numero do Cartão</label>
+                        <input type="text" id="num_cartao" name="numeroCartao" placeholder="Insira o número do cartão">
+                        <br>
+                        <div id="validade_cvc">
+                            <div>
+                                <label for="validade">Validade</label>
+                                <input type="text" id="validade" name="validadeCartao" placeholder="Insira a validade do cartão">
+                            </div>
+                            <div>
+                                <label for="cvc">CVC</label>
+                                <input type="text" id="cvc" name="cvcCartao" placeholder="Insira o CVC do cartão">
+                            </div>
+                        </div>
+                        <br>
+                        <label for="nome_cartao">Nome do Cartão</label>
+                        <input type="text" id="nome_cartao" name="nomeCartao" placeholder="Insira o nome do cartão">
+                        <br>
+                        <button>Concluido</button>
+                    </div>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <label for="">Endereço de entrega:</label>
+        <button id="add_endereço">
+            <i class="fa-solid fa-plus"></i>
+            Adicionar endereço
+        </button>
+
+        <div id="print_endereço" style="display: none;">
+            <h3>Endereço(s) Salvo(s):</h3>
+            <div id="enderecoSalvo"></div>
+        </div>
+
+        <div id="modal" class="modal_endereço">
+            <div class="modal_endereço-conteudo">
+                 <button id="fechar">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                </button>
+                <h2>Insira seu endereço</h2>
+            </div>
+                <form id="form_endereço">
+                    <label for="nome">Nome para entrega</label>
+                    <input type="text" id="nome" name="campo1" placeholder="Insira o nome para entrega" required>
+                    <br>
+                    <div id="cep_tel">
+                        <div>
+                            <label for="cep">CEP</label>
+                            <br>
+                            <input type="number" id="cep" name="campo2" class="meio_input" placeholder="Insiraseu Cep" required>
+                        </div>
+                        <div>
+                            <label for="telefone">Telefone</label>
+                            <br>
+                            <input type="number" id="telefone" name="campo3" class="meio_input" placeholder="Insira seu telefone" required>
+                            <br>
+                        </div>
+                    </div>
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" name="campo4" placeholder="Insira o nome da Rua" required>
+                    <br>
+
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" name="campo5" placeholder="Insira o número da casa" required>
+                    <br>
+
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="campo6" placeholder="Insira o seu bairro" required>
+                    <br>
+
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" id="cidade" name="campo7" placeholder="Cidade - Estado">
+                    <br>
+
+                    <button id="botao_enviar" idtype="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <button id="confirmar_tudo" onclick="window.location.href='concluido.html'">Confirmar</button>
+    </div>
+</div>
+
+<div class="menu">
+    <a href="../inicio/pg_inicial.html">
+        <button class="botao_menu" id="menu_casa">
+            <span><i class="fa-solid fa-house"></i></span>
+        </button>
+    </a>
+    <a href="../mapa/mapa.html">
+        <button class="botao_menu" id="menu_mapa">
+            <span><i class="fa-solid fa-map"></i></span>
+        </button>
+    </a>
+    <a href="../gerenciar/gerenciar.html">
+        <button class="botao_menu" id="menu_mala">
+            <span><i class="fa-solid fa-suitcase-rolling"></i></span>
+        </button>
+    </a>
+    <a href="../perfil/perfil.html">
+        <button class="botao_menu" id="menu_perfil">
+            <span><i class="fa-solid fa-user"></i></span>
+        </button>
+    </a>
+</div>
+
+<script src="js_aluguel.js"></script>
+
+</body>
+</html>

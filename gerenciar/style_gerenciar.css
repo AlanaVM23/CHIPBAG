@@ -1,0 +1,223 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #222;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    max-width: 700px; 
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h1{
+    color: #14bcdc;
+}
+
+.texto{
+    margin-bottom: 45px;
+}
+
+
+.botao_chip{
+    margin: 5px;
+}
+
+.chipButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: #14bcdc;
+    border: 0;
+    border-radius: 8px;
+    margin: 0px 5px 20px 5px;
+    padding: 10px 15px;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 0 2px 3px 0px #43808c;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.chipButton:hover{
+    box-shadow: 0;
+    background-color: #11768a;
+}
+
+.fa-microchip{
+    font-size: 30px;
+    color: #222;
+}
+
+.menu_popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 2;
+}
+
+.conteudo_popup {
+    background-color: #222;
+    margin: auto;
+    border: 0;
+    width: 80%;
+    height: 100%;
+    max-width: 700px; 
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    text-align: center;
+}
+
+.conteudo_popup .fecharPopup {
+    background: transparent;
+    color: #14bcdc;
+    border: 0;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.conteudo_popup .fecharPopup:hover {
+    color: #11768a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo_popup #add_mala{
+    background-color: #14bcdc;
+    color: #222;
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 25px;
+    border: 0;
+    font-size: 16px;
+}
+
+.conteudo_popup #add_mala:hover{
+    background-color: #11768a;
+}
+
+.conteudo_popup #chipName{
+    font-size: 28px;
+    margin: 20px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.conteudo_popup .botao_popup {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 15px;
+}
+
+.conteudo_popup .botao_popup:hover {
+    color: #14bcdc;
+}
+
+.conteudo_popup #favoritar.favoritado{
+    color: #14bcdc;
+}
+
+.conteudo_popup #excluir{
+    color: #ca1515;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.conteudo_popup #excluir:hover{
+    color: #a01010;
+}
+
+.conteudo_popup .campos_excluir{
+    background-color: #393939;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conteudo_popup .campos_excluir .botao_excluir{
+    width: 90%;
+    height: 35px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #ca1515;
+    margin: 5px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.conteudo_popup .campos_excluir #excluir_nao{
+    background-color: #fff;
+    color: #222;
+}
+
+.conteudo_popup .campos_excluir #excluir_sim:hover{
+    background-color: #a01010;
+}
+
+.conteudo_popup .campos_excluir #excluir_nao:hover{
+    background-color: #cdcdcd;
+}
+
+.hidden{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    height: 40px;
+    max-width: 700px; 
+    padding: 10px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    }
+
+.menu .botao_menu{
+    background: transparent;
+    color: white;
+    border: 0;
+    font-size: 25px;
+}
+
+.menu .active{
+    color: #14bcdc;
+}
+
+.menu .botao_menu :hover .fa-solid{
+    color: #14bcdc;
+}

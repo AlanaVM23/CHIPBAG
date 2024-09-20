@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_perfil.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo">
+        <h1 id="texto1">Perfil</h1>
+        <div class="imagem-container">
+            <img src="../img/alan-perfil.png" alt="Imagem Redonda">
+        </div>
+        <h2 id="nomePerfil">Alan Ferreira da Silva</h1>
+        <h3 class="texto3">alan.ferreira.silva@gmail.com</h3>
+        <h3 class="texto3">CPF: 902.926.107-76</h3>
+        <h3 class="texto3">RG: 396.104.675-X</h3>
+        <br>
+
+        <h2 id="Chips">CHIPS REGISTRADOS:</h2>
+        <div id="botao_chip"></div>
+
+        <button class="delete-button">Excluir Conta</button>
+        <div id="deleteModal" class="modal">
+            <div class="modal-content">
+                <img id="img_excluir" src="../img/excluir.png" alt="excluir">
+                <p>Você tem certeza que deseja excluir sua conta?</p>
+                <button id="confirmDelete" class="confirm-button">Sim, excluir</button>
+                <button id="cancelDelete" class="cancel-button">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <button class="botao_menu" id="menu_casa" onclick="location.href='../inicio/pg_inicial.html'">
+            <span><i class="fa-solid fa-house"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_mapa" onclick="location.href='../mapa/mapa.html'">
+            <span><i class="fa-solid fa-map"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_mala" onclick="location.href='../gerenciar/gerenciar.html'">
+            <span><i class="fa-solid fa-suitcase-rolling"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_perfil" onclick="location.href='perfil.html'">
+            <span><i class="fa-solid fa-user"></i></span>
+        </button>
+    </div>
+
+    <script src="js_perfil.js"></script>
+</body>
+</html>

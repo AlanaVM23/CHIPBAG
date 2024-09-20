@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_add_mala.css">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+    <title>Adicionar Mala</title>
+</head>
+<body>
+    <div class="conteudo">
+        <button id="voltar" onclick="window.location.href='gerenciar.html';">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+        </button>
+        <br>
+        <h1>Adicionar Mala</h1>
+        
+        <label for="nome_mala">Nome da Mala</label>
+        <div class="campo">
+            <input class="campo_texto" type="text" id="nome_mala" placeholder="Insira o nome que deseja atriuir a sua mala">
+        </div>
+
+        <label for="chip_mala">Chip</label>
+        <div class="campo">
+            <select class="campo_texto" id="chip_mala">
+                <option value="">Selecione um chip</option>
+            </select>
+        </div>
+
+        <label for="">Foto da sua mala</label>
+        <div id="campo_img">
+            <form id="form_imagem" action="/upload" method="post" enctype="multipart/form-data">
+                <div id="campinho_img">
+                    <input type="file" id="imagem" name="imagem" accept="image/*">
+                    <p>Escolher Arquivo</p>
+                    <div id="nome_img">Nenhuma imagem selecionada</div>
+                </div>
+        </div>
+        <div id="botao_final">
+            <button id="botao_salvar" type="button" onclick="imgSalva()">Salvar</button>
+        </div>
+        </form>
+    </div>
+
+    <script src="js_add_mala.js"></script>
+</body>
+</html>

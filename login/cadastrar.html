@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_cadastro.css">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+    <title>Cadastre-se</title>
+
+</head>
+<body>
+<div class="conteudo">
+    <h1>Cadastre-se</h1>
+    <form action="">
+        <fieldset>
+
+            <label>Nome Completo</label>
+            <div class="campo">
+                <input type="text" placeholder="Insira o seu nome completo" required>
+            </div>
+            
+            <label>Data de Nascimento</label> 
+            <div class="campo">
+                <input id="data" type="date" required>
+            </div>
+
+            <label for="">E-mail</label>
+            <div class="campo">
+                <input type="email" placeholder="Insira o seu e-mail" required>
+            </div>
+
+            <label>Celular</label>
+            <div class="campo">
+                <input type="tel" placeholder="Informe seu numero de celular" maxlength="11">
+            </div>
+            
+            <label for="">Senha</label>
+            <div class="campo">
+                <input type="password" placeholder="Crie a sua senha" maxlength="15" required>
+            </div>
+
+            <div>
+                <button type="submit" onclick = "cadastrarUsuario()">Concluído</button>
+                <p>Já possui um cadastro? Faça <a href="login.html">login</a></p>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript" src="js_cadastro.js"></script>
+</body>
+</html>

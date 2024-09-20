@@ -1,0 +1,222 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #222;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px rgba(29, 29, 29, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/Mapa.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.conteudo {
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    max-width: 700px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#voltar {
+    background: transparent;
+    color: #222;
+    border: 0;
+    float: left;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px rgba(29, 29, 29, 0.5);
+    font-weight: bold;
+}
+
+#voltar:hover {
+    color: #11768a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    height: 30px;
+    max-width: 700px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.menu #botão_menu {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#botão_menu p {
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(135, 135, 135, 0.5);
+}
+
+#botão_menu:hover {
+    color: #14bcdc;
+}
+
+#menu_chips {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 2;
+    font-size: 18px;
+}
+
+#menu_chips.show {
+    display: block;
+    transform: translateY(0);
+}
+
+#menu_chips #menu_chips-conteudo {
+    background-color: #222;
+    color: #fff;
+    margin: auto;
+    border: 0;
+    width: 80%;
+    height: 100%;
+    max-width: 700px;
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    text-align: center;
+}
+
+#menu_chips-conteudo .fecharPopup {
+    background: transparent;
+    color: #14bcdc;
+    border: 0;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.chipButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #393939;
+    border: 0;
+    border-radius: 8px;
+    margin: 0px 5px 20px 0px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 3px 3px 0px #313131;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+.chipButton:hover{
+    box-shadow: 0 3px 3px 0px #303030;
+    background-color: #2f2f2f;
+}
+
+.chipButton.active {
+    background-color: #2f2f2f;
+    box-shadow: 0 3px 3px 0px #303030;
+}
+
+.fa-microchip{
+    font-size: 25px;
+    color: #fff;
+}
+
+.detalhesChip {
+    background-color: #393939;
+    border: none;
+    padding: 10px 0 10px 0;
+    margin: 5px 0 15px 0;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.chip_nome{
+    font-size: 26px;
+    text-shadow: none;
+    margin: 5px 0 10px 0;
+}
+
+.imagemChip{
+    width: 200px;  
+    height: auto;  
+    margin: 10px 0;  
+    display: block; 
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(29, 29, 29, 0.5);
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.chip_status{
+    font-size: 16px;
+    text-shadow: none;
+    margin: 20px 0 5px 0;
+}
+
+.ativar_chip {
+    margin-top: 10px;
+    background-color: #14bcdc;
+    font-size: 18px;
+    width: 80%;
+    height: 35px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(29, 29, 29, 0.5);;
+}
+
+.ativar_chip:hover{
+    background-color: #11768a;
+}
+
+.ativar_chip.ativado {
+    background-color: #555555;
+}
+
+.ativar_chip.ativado:hover{
+    background-color: #414141;
+}
+
+.hidden {
+    display: none;
+}

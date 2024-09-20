@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_login.css">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+
+    <title>Login</title>
+</head>
+<body>
+<div class="conteudo">
+    <h1>Login</h1>
+    <picture class="logo">
+        <source media="(max-width: 500px)" srcset="../img/mala150.png" type="image/png">
+        <img src="../img/mala200.png" alt="">
+    </picture>
+    <form>
+        <fieldset class="formulario">
+
+            <p id="entrar">Entrar na ChipBag</p>
+
+            <div class="campo">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input type="text" maxlength="800" placeholder ="Insira seu e-mail"required>
+            </div>
+
+            <div class="campo">
+                <span><i class="fa-solid fa-key"></i></span>
+                <input type="password" name="" id="" placeholder="Senha" required>
+            </div>
+
+            <div class="concluir">
+                <button onclick = "loginUsuario()">Login</button>
+            </div>
+
+            <p>Não tem um cadastro? <a href="cadastrar.html">Cadastra-se</a></p>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript" src="js_login.js"></script>
+</body>
+</html>

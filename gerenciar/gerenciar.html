@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style_gerenciar.css">
+    <script src="https://kit.fontawesome.com/5f67811854.js" crossorigin="anonymous"></script>
+    <title>Gerenciar Chip</title>
+
+</head>
+<body>
+    <div id="overlay" class="overlay"></div>
+    <div class="conteudo">
+        <div class="texto">
+            <h1>Gerenciar Chips</h1>
+            <p>Selecione o chip que deseja gerenciar</p>
+        </div>
+
+        <div id="botao_chip"></div>
+
+        <div id="menuPopup" class="menu_popup"> 
+            <div class="conteudo_popup">
+                <button id="fechar" class="fecharPopup">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                </button>
+                <button id="add_mala" onclick="window.location.href='add_mala.html';">Adicionar Mala</button>
+                <p id="chipName"></p>
+
+                <button id="favoritar" class="botao_popup">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    Favoritar
+                </button>
+
+                <button class="botao_popup" onclick="window.location.href='compartilhar.html';">
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    Compartilhar Chip
+                </button>
+
+                <button id="excluir" class="botao_popup" onclick="excluirChip()">
+                    Excluir Chip
+                </button>
+                <div id="confirm_excluir" class="campos_excluir hidden">
+                    <p>Tem certeza que deseja excluir seu chip?</p>
+                    <button class="botao_excluir" id="excluir_sim" onclick="confirmarExcluir()">Sim</button>
+                    <br>
+                    <button class="botao_excluir" id="excluir_nao" onclick="fecharCamposExcluir()">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <button class="botao_menu" id="menu_casa" onclick="location.href='../inicio/pg_inicial.html'">
+            <span><i class="fa-solid fa-house"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_mapa" onclick="location.href='../mapa/mapa.html'">
+            <span><i class="fa-solid fa-map"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_mala" onclick="location.href='gerenciar.html'">
+            <span><i class="fa-solid fa-suitcase-rolling"></i></span>
+        </button>
+        <button class="botao_menu" id="menu_perfil" onclick="location.href='../perfil/perfil.html'">
+            <span><i class="fa-solid fa-user"></i></span>
+        </button>
+    </div>
+
+    <script src="js_gerenciar.js"></script>
+</body>
+</html>
